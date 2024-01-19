@@ -5,7 +5,7 @@
 }
 body{
     background-color: #fff;
-    padding-bottom: 5%;
+
 }
 .container{
     width: 100%;
@@ -84,9 +84,9 @@ body{
     background: rgb(0, 0, 0);
     color:#fff;
     border: none;
-    height:50px;
-    width:50px;
-    font-size: 0.7rem;
+    height:70px;
+    width:70px;
+    font-size: 0.9rem;
     border-radius: 100%;
     cursor: pointer;
     position: fixed;
@@ -94,9 +94,6 @@ body{
     right: 20px;
     z-index: 1;
     transition: 0.4s ease;
-}
-.fetch-more:hover{
-    transform: scale(1.2);
 }
 button{
     transition: 0.4s ease;
@@ -106,8 +103,18 @@ button:hover{
 }
 
 @media only screen and (max-width: 768px) {
+    body{
+        position: relative;
+        top:110px;
+    }
     .container .header{
-        padding: 10px;
+        padding: 13px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        position: fixed;
+        position: fixed;
+        top: 0;
     }
     .recipe-gallery {
         padding: 10px; 
@@ -122,8 +129,10 @@ button:hover{
     }
 
     .fetch-more {
-        bottom: 10px;
-        right: 10px;
-        font-size: 0.7rem; 
+        bottom: 20px;
+        right: 15px;
+        font-size: 0.85rem; 
+        color:black;
+        background-color:rgb(235, 152, 0) ;
     }
 }
