@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', async function(){
 
                 const recipeHTML = `  <div class="recipe-card">
                 <div class="food-img">
-                    <img src="${meal.strMealThumb}">
+                    <a href="${meal.strSource}" target="_blank" rel="noopener noreferrer"><img src="${meal.strMealThumb}"></a>
                 </div>
                 <div class="food-title">
                     <h2>${meal.strMeal}</h2>
@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', async function(){
                     <p>${instructions}<a href="${meal.strSource}" class="read-more" style="color:rgb(235, 152, 0);">readmore</a></p>
                 </div>
                 <div class="food-link">
-                        <a href="${meal.strSource}" ><button>View Recipe</button></a>
+                        <a href="${meal.strSource}" target="_blank" rel="noopener noreferrer" ><button>View Recipe</button></a>
                 </div>
-            </div>`
+            </div>`;
 
             
             recipeCard.innerHTML += recipeHTML
