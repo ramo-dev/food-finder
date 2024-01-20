@@ -12,7 +12,6 @@ body{
 }
 .container .header{
     background-color: rgb(235, 152, 0);
-    filter: inv;
     display: flex;
     justify-self: center;
     justify-content: center;
@@ -102,7 +101,7 @@ button:hover{
     filter:grayscale(0.5)
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
     body{
         position: relative;
         top:110px;
@@ -115,13 +114,16 @@ button:hover{
         position: fixed;
         position: fixed;
         top: 0;
+        z-index: 1;
     }
     .recipe-gallery {
         padding: 10px; 
     }
 
     .recipe-card {
+        display: flex;
         max-width: 100%; 
+        transform: scale(1);
     }
 
     .recipe-card .food-img img {
