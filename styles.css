@@ -107,6 +107,7 @@ button:hover{
         top:110px;
     }
     .container .header{
+        width: 100%;
         padding: 13px;
         padding-top: 30px;
         padding-bottom: 30px;
